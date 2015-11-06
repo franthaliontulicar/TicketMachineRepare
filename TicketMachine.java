@@ -80,10 +80,12 @@ public class TicketMachine
             total = total + price;
             // Reduce the balance by the prince.
             balance = balance - price;
+            
+            int amountLeftToPay;
+            amountLeftToPay=balance;
         }
         else {
-            System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
+            System.out.println("No ha introdicido el dinero suficiente, introduzca ");
                     
         }
     }

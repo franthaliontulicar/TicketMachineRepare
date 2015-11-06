@@ -26,6 +26,7 @@ public class TicketMachine
         price = cost;
         balance = 0;
         total = 0;
+       
     }
 
     /**
@@ -33,7 +34,9 @@ public class TicketMachine
      */
     public int getPrice()
     {
+        
         return price;
+    
     }
 
     /**
@@ -103,10 +106,16 @@ public class TicketMachine
     }
     
     public int emptyMachine(){
-    
+        
     int cantidad=total;
     total=0;
-    return cantidad;
-        
-    }
+   
+   
+        if(balance == 0){
+        return cantidad;
+ 
+        }
+         return cantidad;
+   }
 }
+   
